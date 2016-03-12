@@ -59,7 +59,7 @@ int main(int argc, char *argv[]) {
     // Parse the first parameter to this command as an integer
     int code = atoi(argv[0]);
 
-    if (wiringPiSetup () == -1) {
+    if (wiringPiSetupSys () == -1) {
         return EXIT_FAILURE;
     }
 
